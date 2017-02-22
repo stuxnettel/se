@@ -73,7 +73,7 @@ local user_id = msg.sender_user_id_
 local function check_invite(arg, data)
 local hash = 'autoleave' 
 if tonumber(data.id_) == our_id and not redis:get(hash) then
- tdcli.sendMessage(arg.chat_id, "", 0, "_Don't invite me_ *JackAss :/*", 0, "md")
+ tdcli.sendMessage(arg.chat_id, "", 0, "_Don't invite me_ *#Arman :/*", 0, "md")
   tdcli.changeChatMemberStatus(arg.chat_id, our_id, 'Left', dl_cb, nil)
 end
 end
